@@ -10,7 +10,6 @@ import clases.Ejercicio9;
 import clases.Ejercicio10;
 import clases.Ejercicio11;
 import clases.Ejercicio12;
-import clases.Ejercicio13;
 
 /**
  * C2-UD05
@@ -103,8 +102,8 @@ public class FlujoDeDatosApp {
 		ejercicio12.verificaPassword();
 		 
 		// C2-T05: Ejercicio 13 *
-		System.out.println("\n************** Ejercicio 13 *************\n");
-		Ejercicio13 ejercicio13 = new Ejercicio13();
+		//CalculadoraInversaApp
+		new CalculadoraInversaApp().pideDatos();
 		
 	}
 
