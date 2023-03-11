@@ -1,5 +1,4 @@
 import clases.Ejercicio1;
-import clases.Ejercicio10;
 import clases.Ejercicio2;
 import clases.Ejercicio3;
 import clases.Ejercicio4;
@@ -8,6 +7,10 @@ import clases.Ejercicio6;
 import clases.Ejercicio7;
 import clases.Ejercicio8;
 import clases.Ejercicio9;
+import clases.Ejercicio10;
+import clases.Ejercicio11;
+import clases.Ejercicio12;
+import clases.Ejercicio13;
 
 /**
  * C2-UD05
@@ -84,24 +87,25 @@ public class FlujoDeDatosApp {
 		ejercicio9.mostrarDecena();
 		System.out.println("\n");
 
-		// C2-T05: Ejercicio 10
+		//C2-T05: Ejercicio 10
 		System.out.println("\n************** Ejercicio 10 *************\n");
 		Ejercicio10 ejercicio10 = new Ejercicio10();
 		ejercicio10.sumaVentas();
 
-		// TODO: Ejercicio 11
-		// C2-T05: Ejercicio 11
-		/*
-		 * System.out.println("\n************** Ejercicio 11 *************\n");
-		 * Ejercicio11 ejercicio11 = new Ejercicio11();
-		 * 
-		 * //TODO: Ejercicio 12 // C2-T05: Ejercicio 12
-		 * System.out.println("\n************** Ejercicio 12 *************\n");
-		 * Ejercicio12 ejercicio12 = new Ejercicio12();
-		 * 
-		 * //TODO: Ejercicio 13 // C2-T05: Ejercicio 13 *
-		 * System.out.println("\n************** Ejercicio 13 *************\n");
-		 */
+		//C2-T05: Ejercicio 11
+		System.out.println("\n************** Ejercicio 11 *************\n");
+		Ejercicio11 ejercicio11 = new Ejercicio11();
+		ejercicio11.esDiaLaboral();
+
+		// C2-T05: Ejercicio 12
+		System.out.println("\n************** Ejercicio 12 *************\n");
+		Ejercicio12 ejercicio12 = new Ejercicio12();
+		ejercicio12.verificaPassword();
+		 
+		// C2-T05: Ejercicio 13 *
+		System.out.println("\n************** Ejercicio 13 *************\n");
+		Ejercicio13 ejercicio13 = new Ejercicio13();
+		
 	}
 
 }
