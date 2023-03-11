@@ -11,7 +11,7 @@ public class Ejercicio8 {
 
 	public void muestraNumerosFor(int num) {
 
-		System.out.println("Muestra números del 1 al " + num + " incluidos");
+		System.out.println("· Muestra números del 1 al " + num + " incluidos");
 		for (int i = 1; i < (num + 1); i++) {
 			System.out.print(" " + i);
 		}

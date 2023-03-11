@@ -12,17 +12,21 @@ import javax.swing.JOptionPane;
 public class Ejercicio5 {
 
 	public int leeNumero() {
-		int num = Integer.parseInt(JOptionPane.showInputDialog(null, "Introduce un número: ", "EJERCICIO 5",
-				JOptionPane.QUESTION_MESSAGE));
+		int num = Integer.parseInt(JOptionPane.showInputDialog(null, "Introduce un número para ver si es par o impar: ",
+				"EJERCICIO 5", JOptionPane.QUESTION_MESSAGE));
 		return num;
 	}
 
 	public void esPar() {
-		int num = leeNumero();
-		if (num % 2 == 0) {
-			System.out.println(num + " es un número Par");
-		} else {
-			System.out.println(num + " es un número Impar");
+		try {
+			int num = leeNumero();
+			if (num % 2 == 0) {
+				System.out.println(num + " es un número Par");
+			} else {
+				System.out.println(num + " es un número Impar");
+			}
+		} catch (Exception e) {
+			System.out.println("No has introducido número para evaluar.");
 		}
 	}
 }

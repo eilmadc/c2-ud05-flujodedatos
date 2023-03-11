@@ -22,11 +22,15 @@ public class Ejercicio6 {
 
 	public void calculaPrecioIva() {
 
-		double precio = leeNumero();
-		double precioIva = (precio * IVA) + precio;
-		System.out.println("· Precio sin IVA = " + String.format("%.2f", precio));
-		System.out.println("· IVA=" + (Math.round(IVA * 100)) + "%");
-		System.out.println("· Precio con IVA = " + String.format("%.2f", precioIva));
+		try {
+			double precio = leeNumero();
+			double precioIva = (precio * IVA) + precio;
+			System.out.println("· Precio sin IVA = " + String.format("%.2f", precio));
+			System.out.println("· IVA=" + (Math.round(IVA * 100)) + "%");
+			System.out.println("· Precio con IVA = " + String.format("%.2f", precioIva));
+		} catch (Exception e) {
+			System.out.println("No has introducido un PRECIO.");
+		}
 	}
 
 }
