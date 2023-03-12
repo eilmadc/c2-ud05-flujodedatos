@@ -19,7 +19,7 @@ public class CalculadoraInversaApp {
 		// TODO Auto-generated method stub
 
 		System.out.println("\n****************************************");
-		System.out.println("************** CALCULADORA **************");
+		System.out.println("************** CALCULADORA *************");
 		System.out.println("****************************************");
 
 		new CalculadoraInversaApp().pideDatos();

@@ -12,32 +12,24 @@ import javax.swing.JOptionPane;
 public class Ejercicio11 {
 
 	public String pedirDiaSemana(String message) {
-		
-		String dia = "";
-		
-		try {
-		
-			dia = JOptionPane.showInputDialog(null, message, "EJERCICIO 11", JOptionPane.QUESTION_MESSAGE);
 
-		} catch (Exception e) {
-			System.out.println("No has introducido un valor");
-		}
-		
+		String dia = "";
+
+		dia = JOptionPane.showInputDialog(null, message, "EJERCICIO 11", JOptionPane.QUESTION_MESSAGE);
+
 		return dia;
 	}
 
 	public void esDiaLaboral() {
 
 		String dia = pedirDiaSemana("Introduce el DIA SEMANA (sin acentos):");
-		
+
 		if (dia == null) {
 			System.out.println("No has escrito nada.");
 
 		} else {
-			
-			dia.toUpperCase();
-			
-			switch (dia) {
+
+			switch (dia.toUpperCase()) {
 			case "LUNES":
 			case "MARTES":
 			case "MIERCOLES":
