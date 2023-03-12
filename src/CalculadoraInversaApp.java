@@ -81,7 +81,8 @@ public class CalculadoraInversaApp {
 			mostrarMensajeDialog("RESULTADO = " + resto);
 			break;
 		default:
-
+			mostrarMensaje("No has introducido una operación correcta ( + - * / ^ %  ) ");
+			break;
 		}
 	}
 
